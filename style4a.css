@@ -6,8 +6,6 @@
 #maindiv1 {
     min-height: 75vh;
     background-color: #014D4E;
-    margin: 0;
-    padding: 0;
 }
 
 h1 {
@@ -44,46 +42,4 @@ h1 {
 h2,
 p {
     color: aliceblue;
-}
-#maindiv2 {
-    background-color: rgb(26, 153, 113);
-    margin: 0;
-    padding: 0;
-}
-
-.class2 {
-    min-height: 60vh;
-}
-
-#TESTIMONIALS {
-    padding: 10vh;
-}
-
-.img {
-    width: 10vw;
-}
-
-.img>img {
-    max-width: 100%;
-    min-height: 100%;
-}
-
-.para {
-    width: 75vw;
-    background-color: rgb(4, 79, 84);
-    padding-left: .5vw;
-}
-
-.c1 {
-    display: flex;
-    justify-content: center;
-    min-height: 25vh;
-}
-
-#name {
-    font-size: 2em;
-}
-
-.quot {
-    height: 8vh;
 }
