@@ -1,13 +1,11 @@
-* {
+  * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 #maindiv2 {
     background-color: rgb(26, 153, 113);
-}
-
-.class2 {
     min-height: 60vh;
 }
 
@@ -46,3 +44,18 @@
 .quot {
     height: 8vh;
 }
+
+@media (max-width: 768px) {
+  .c1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .para {
+    width: 100%;
+  }
+}  
