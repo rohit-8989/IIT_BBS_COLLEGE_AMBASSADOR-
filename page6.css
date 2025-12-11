@@ -1,0 +1,122 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #05240f;   
+    font-family: Arial;
+    color: white;
+}
+
+.footer {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.icon {
+    color: white;
+    font-size: 14px;   
+    margin-right: 6px;
+}
+
+.social-items p {
+    margin: 7px 0;
+}
+
+.query-text {
+    margin-top: 20px;
+}
+
+.mail {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.quick-links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.links-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 140px;   
+    text-align: left; 
+}
+
+.left-links p, 
+.right-links p {
+    margin: 5px 0;
+    color: white;
+    font-size: 18px;
+}
+
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;        
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.pravaah-logo {
+    width: 65px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+.credit {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+/*RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    
+    .links-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .left-links p,
+    .right-links p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    
+    .footer-logo {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .pravaah-logo {
+        width: 55px;
+    }
+
+    .logo-text {
+        font-size: 22px;
+    }
+
+    
+    .social-items p {
+        font-size: 15px;
+    }
+
+   
+    .mail {
+        font-size: 14px;
+    }
+}
