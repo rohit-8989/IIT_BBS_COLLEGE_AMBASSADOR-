@@ -86,3 +86,18 @@ background-color: white;
 h2{
     padding-bottom: 20px;
 }
+/*------------responsive-----------------*/
+@media (max-width: 768px) {
+    .incentives-container {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .incentive-item, .incentive-item-1, .incentive-item-2, .incentive-item-3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body{
+        padding-left:20px;
+    }
+}
+
