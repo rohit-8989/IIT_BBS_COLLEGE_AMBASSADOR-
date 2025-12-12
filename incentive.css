@@ -2,6 +2,7 @@ body{
     font-family:Arial, sans-serif;
     padding-left:250px;
     box-sizing:border-box ;
+    
 }
 /*incentives section*/
 .incentives-section{
@@ -11,6 +12,8 @@ body{
     width:660px;
     height: 500px;
     gap:20px;
+    margin-top: 60px;
+    margin-left:120px;
 }
 .incentives-container{
     align-items: center;
