@@ -62,16 +62,47 @@
 }
 
 @media (max-width: 768px) {
+
+  #maindiv2 {
+    width: 95vw;
+    padding: 3vh 3vw;
+  }
+
   .c1 {
     flex-direction: column;
     text-align: center;
+    gap: 1rem;
   }
 
   .img {
-    width: 50vw; 
+    width: 45vw; 
+  }
+
+  .img > img {
+    width: 100%;
+    height: auto;
   }
 
   .para {
-    width: 90%;
+    width: 90vw;
+    max-width: none;
+    height: auto;
+    padding: 1rem;
+  }
+
+  #photo {
+    width: 45vw;
+    margin: 10px auto;
+    height: auto;
+  }
+
+  #name {
+    font-size: 1.5em;
+  }
+
+  .quot {
+    height: auto;
+    width: 50px;
+    margin: 0 auto;
   }
 }
