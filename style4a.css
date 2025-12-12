@@ -4,53 +4,76 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 #maindiv1 {
-  min-height: 75vh;
+  width: 90vw;
+  max-width: 1200px;
+  min-height: 70vh;
   background-color: #014D4E;
+  padding: 2rem;
+  border-radius: 12px;
 }
 
 h1 {
-  padding-top: 4vh;
+  padding-top: 2vh;
   color: white;
   text-align: center;
 }
 
 .icon-container {
   background-color: white;
-  height: 5vh;
+  height: 6vh;
+  width: 6vh;
   border-radius: 10px;
   margin-right: 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icons {
-  height: 100%;
+  height: 70%;
+  width: 70%;
   border-radius: 8px;
 }
 
 .value {
   flex: 1;
-  width: 70vw;
+  width: 70%;
 }
 
 .Different-Roles {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin: 3vh;
-
+  gap: 1rem;
 }
 
 h2 {
-  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
   color: aliceblue;
 }
 
 p {
-  font-size: clamp(0.85rem, 1.6vw, 1rem);
+  font-size: clamp(0.9rem, 1.6vw, 1rem);
   color: aliceblue;
 }
 
 @media (max-width: 768px) {
+  #maindiv1 {
+    width: 95vw;
+    min-height: 60vh;
+  }
+
   .Different-Roles {
     flex-direction: column;
     align-items: flex-start;
@@ -73,6 +96,7 @@ p {
   #maindiv1 {
     padding-left: 3vw;
     padding-right: 3vw;
+    width: 98vw;
   }
 
   .icon-container {
