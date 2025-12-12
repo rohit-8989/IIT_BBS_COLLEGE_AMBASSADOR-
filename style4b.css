@@ -1,4 +1,4 @@
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,19 +7,26 @@
 #maindiv2 {
     background-color: rgb(26, 153, 113);
     min-height: 60vh;
+    width: 90vw;     
+    max-width: 1200px;   
+    margin: 5vh auto;       
+    padding: 4vh 4vw;    
+    border-radius: 12px;    
 }
 
 #TESTIMONIALS {
     color: white;
-    padding: 10vh;
+    padding: 3vh;
     text-align: center;
 }
 
 .img {
     width: 10vw;
+    max-width: 180px; 
+    min-width: 120px; 
 }
 
-.img>img {
+.img > img {
     max-width: 100%;
     min-height: 100%;
 }
@@ -27,14 +34,19 @@
 .para {
     color: white;
     width: 75vw;
+    max-width: 800px; 
     background-color: rgb(4, 79, 84);
     padding-left: .5vw;
+    padding: 1rem; 
 }
 
 .c1 {
     display: flex;
     justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap; 
     min-height: 25vh;
+    gap: 1.5rem; 
 }
 
 #name {
@@ -52,10 +64,10 @@
   }
 
   .img {
-    width: 100%;
+    width: 50vw; 
   }
 
   .para {
-    width: 100%;
+    width: 90%;
   }
-}  
+}
