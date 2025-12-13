@@ -91,7 +91,7 @@ h1{
         padding-bottom: 20px;
     }
     .incentive-item, .incentive-item-1, .incentive-item-2, .incentive-item-3{
-        width:250px;
+        width:200px;
         margin-left: 100px;
         padding-left:0;
     }
@@ -99,3 +99,4 @@ h1{
         font-size: 24px;
     }
 }
+
