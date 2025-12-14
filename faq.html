@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,50 +7,64 @@
    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h2>FAQs</h2>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>Who can become a Campus Ambassador?</span>
-        <span class="arrow">▼</span>
-      </div>
-      <div class="faq-answer">Any student currently enrolled in a recognized college can apply.</div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>How do I know if I got selected as a Campus Ambassador?</span>
-        <span class="arrow">▼</span>
-      </div>
-      <div class="faq-answer">You will be notified via email or WhatsApp upon selection.</div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>What will be my responsibility as a Campus Ambassador for Pravaah?</span>
-        <span class="arrow">▼</span>
-      </div>
-      <div class="faq-answer">Your main role is to promote Pravaah events and represent your campus.</div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>How will I contribute to Pravaah as a Campus Ambassador?</span>
-        <span class="arrow">▼</span>
-      </div>
-      <div class="faq-answer">You will help with outreach, promotions, and student engagement.</div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>What incentives do I receive as a Campus Ambassador?</span>
-        <span class="arrow">▼</span>
-      </div>
-      <div class="faq-answer">Certificates, badges, networking opportunities, and rewards.</div>
-    </div>
-
-    <div class="contact-section">
+    <h2>faqs</h2>
+    <section>
+        <div class="container">
+            <div class="accordion">
+                <div class="accordion_item" id="question1">
+                    <a class="accordion_link" href="#question1">
+                        Who can become a Campus Ambassador?
+                        <i class="icon_plus">+</i>
+                        <i class="icon_minus">-</i>
+                    </a>
+                    <div class="answer">
+                        <p>Any student currently enrolled in a recognized college can apply.</p>
+                    </div>
+                </div>
+                <div class="accordion_item" id="question2">
+                    <a class="accordion_link" href="#question2">
+                        How do I know if I got selected as a Campus Ambassador?
+                        <i class="icon_plus">+</i>
+                        <i class="icon_minus">-</i>
+                    </a>
+                    <div class="answer">
+                        <p>You will be notified via email or WhatsApp upon selection.</p>
+                    </div>
+                </div>
+                <div class="accordion_item" id="question3">
+                    <a class="accordion_link" href="#question3">
+                        What will be my responsibility as a Campus Ambassador for Pravaah?
+                        <i class="icon_plus">+</i>
+                        <i class="icon_minus">-</i>
+                    </a>
+                    <div class="answer">
+                        <p>Your main role is to promote Pravaah events and represent your campus.</p>
+                    </div>
+                </div>
+                <div class="accordion_item" id="question4">
+                    <a class="accordion_link" href="#question4">
+                        How will I contribute to Pravaah as a Campus Ambassador?
+                        <i class="icon_plus">+</i>
+                        <i class="icon_minus">-</i>
+                    </a>
+                    <div class="answer">
+                        <p>You will help with outreach, promotions, and student engagement.</p>
+                    </div>
+                </div>
+                <div class="accordion_item" id="question5">
+                    <a class="accordion_link" href="#question5">
+                        What incentives do I receive as a Campus Ambassador?
+                        <i class="icon_plus">+</i>
+                        <i class="icon_minus">-</i>
+                    </a>
+                    <div class="answer">
+                        <p>Certificates, badges, networking opportunities, and rewards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <div class="contact-section">
       <h2>Contact Us</h2>
 
       <div class="cards">
@@ -61,9 +74,9 @@
           <p>details</p>
           <p>9610147129</p>
           <div class="icons">
-            <div class="icon"></div>
-            <div class="icon"></div>
-            <div class="icon"></div>
+            <div class="icon">📥</div>
+            <div class="icon">📞</div>
+            <div class="icon">📃</div>
           </div>
         </div>
 
@@ -73,28 +86,13 @@
           <p>details</p>
           <p>7076671810</p>
           <div class="icons">
-            <div class="icon"></div>
-            <div class="icon"></div>
-            <div class="icon"></div>
+            <div class="icon">📥</div>
+            <div class="icon">📞</div>
+            <div class="icon">📃</div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <script>
-    const faqs = document.querySelectorAll('.faq-item');
-
-faqs.forEach(item => {
-  item.addEventListener('click', () => {
-    faqs.forEach(f => {
-      if (f !== item) f.classList.remove('active');
-    });
-    item.classList.toggle('active');
-  });
-});
-</script>
 </body>
 </html>
-
-
