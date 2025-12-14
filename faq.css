@@ -1,63 +1,88 @@
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(#22c08b, #0c915c);
-      color: #fff;
-    }
+*{
+    margin: 0;
+    padding:0;
+}
 
-    .container {
-      width: 90%;
-      margin: auto;
-      max-width: 900px;
-      padding-top: 40px;
-    }
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    background-color: #6acccc;
+}
 
-    h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 28px;
-      font-weight: bold;
-    }
+h2{
+    font-size: 40px;
+    text-align: center;
+    background-color: #6acccc;
+    padding: 2rem;
+}
 
-    /* FAQ SECTION */
-    .faq-item {
-      background: rgba(255, 255, 255, 0.1);
-      margin-bottom: 10px;
-      padding: min(2em, 8%) ;
-      /* padding: 15px 20px; */
-      border-radius: 6px;
-      cursor: pointer;
-    }
+section{
+    width: 100%;
+    display:flex;
+}
 
-    .faq-question {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 17px;
-    }
+.container{
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
 
-    .faq-answer {
-      background: #1aae79;
-      margin-top: 10px;
-      display: none;
-      padding: min(2em, 8%) ;
-      font-size: 15px;
-      line-height: 1.5;
-    }
+.accordion_item{
+    background-color: #1aae79;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+}
 
-    .arrow {
-      transition: transform 0.3s;
-    }
+.accordion_link{
+    font-size: 1.6rem;
+    color: rgba(0,0,0);
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
 
-    .active .arrow {
-      transform: rotate(180deg);
-    }
 
-    .active .faq-answer {
-      display: block;
-    }
+.accordion_link i{
+    color: #e7d5ff;
+    padding: .5rem;
+}
 
-    /* CONTACT CARDS */
+.accordion_link .icon_minus{
+    display:none;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    color: rgba(255,255,255,.6);
+    background-color: #5dadd5;
+    border-radius: .4rem;
+}
+
+
+.answer::before{
+    content:"";
+    position: absolute;
+    width: 1rem;
+    color:black;
+}
+
+.answer p{
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.accordion_item:target  .answer{
+    max-height: 20rem;
+}
+
+ /* CONTACT CARDS */
     .contact-section {
       margin-top: 60px;
       text-align: center;
